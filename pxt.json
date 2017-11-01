@@ -1,7 +1,7 @@
 {
-    "name": "bitbot",
-    "version": "0.4.1",
-    "description": "A BitBot package for pxt-microbit",
+    "name": "invent",
+    "version": "0.1.0",
+    "description": "Invent Library for Micro:bit Make Code",
     "license": "Apache",
     "dependencies": {
         "core": "*",
@@ -10,10 +10,8 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/no/bitbot-strings.json"
     ],
     "testFiles": [
-        "tests.ts"
     ],
     "yotta": {},
     "public": true
