@@ -11,7 +11,7 @@ enum InventMotor {
     All
 }
 
-enum MotorDirection {
+enum InventMotorDir {
   //% block="forward"
   Forward,
   //% block="reverse"
@@ -33,7 +33,7 @@ namespace invent {
       */
     //% blockId="invent_motor" block="drive motor %motor|direction %direction|speed %speed"
     //% weight=100
-    export function motor(motor: InventMotor, direction: MotorDirection, speed: number): void {
+    export function motor(motor: InventMotor, direction: InventMotorDir, speed: number): void {
 
         if (speed > 100) {
             speed = 100;
@@ -49,7 +49,7 @@ namespace invent {
 
         if ((motor == InventMotor.Left) || (motor == InventMotor.All)) {
             pins.analogWritePin(AnalogPin.P14, aSpeed);
-            if(direction==MotorDirection.forward){
+            if(direction==InventMotorDir.forward){
                 pins.digitalWritePin(DigitalPin.P13,1);
             }
             else {
@@ -59,7 +59,7 @@ namespace invent {
 
         if ((motor == InventMotor.Right) || (motor == InventMotor.All)) {
             pins.analogWritePin(AnalogPin.P16, aSpeed);
-            if(direction==MotorDirection.forward){
+            if(direction==InventMotorDir.forward){
                 pins.digitalWritePin(DigitalPin.P15,1);
             }
             else {
