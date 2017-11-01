@@ -34,7 +34,6 @@ namespace invent {
     //% blockId="invent_motor" block="drive motor %motor|direction %direction|speed %speed"
     //% weight=100
     export function motor(motor: InventMotor, direction: Direction, speed: number): void {
-        let forward = (speed >= 0);
 
         if (speed > 100) {
             speed = 100;
