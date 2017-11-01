@@ -21,7 +21,7 @@ enum MotorDirection {
 /**
  * Custom blocks
  */
-//% weight=10 color=#ea4e1b icon="\u1F6E0"
+//% weight=10 color=#ea4e1b icon="\uf12e"
 namespace invent {
 
     /**
