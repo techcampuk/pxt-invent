@@ -49,7 +49,7 @@ namespace invent {
 
         if ((motor == InventMotor.Left) || (motor == InventMotor.All)) {
             pins.analogWritePin(AnalogPin.P14, aSpeed);
-            if(direction==InventMotorDir.forward){
+            if(direction==InventMotorDir.Forward){
                 pins.digitalWritePin(DigitalPin.P13,1);
             }
             else {
@@ -59,7 +59,7 @@ namespace invent {
 
         if ((motor == InventMotor.Right) || (motor == InventMotor.All)) {
             pins.analogWritePin(AnalogPin.P16, aSpeed);
-            if(direction==InventMotorDir.forward){
+            if(direction==InventMotorDir.Forward){
                 pins.digitalWritePin(DigitalPin.P15,1);
             }
             else {
