@@ -8,6 +8,6 @@
   },
   "scripts": {
     "pxt:init": "pxt target microbit",
-    "pxt:install": "pxt install",
+    "pxt:install": "pxt install"
   }
 }
