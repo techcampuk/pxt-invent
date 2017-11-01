@@ -1,6 +1,6 @@
 {
     "name": "invent",
-    "version": "0.1.5",
+    "version": "v0.1.5",
     "description": "Invent Library for Micro:bit Make Code",
     "license": "Apache",
     "dependencies": {
