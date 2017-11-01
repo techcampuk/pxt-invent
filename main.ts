@@ -41,11 +41,11 @@ namespace invent {
             speed = 0;
         }
      
-       var sMax = 100;
-       var aMax = 1023;
+       let sMax = 100;
+       let aMax = 1023;
 
-       var percent = speed/sMax;
-       var aSpeed = percent * aMax;
+       let percent = speed/sMax;
+       let aSpeed = percent * aMax;
 
         if ((motor == InventMotor.Left) || (motor == InventMotor.All)) {
             pins.analogWritePin(AnalogPin.P14, aSpeed);
