@@ -1,6 +1,6 @@
 {
   "name": "pxt-invent",
-  "version": "0.1.5",
+  "version": "v0.1.5",
   "dependencies": {},
   "devDependencies": {
     "pxt": "^0.3.0",
