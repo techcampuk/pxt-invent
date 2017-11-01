@@ -4,14 +4,11 @@
     "description": "Invent Library for Micro:bit Make Code",
     "license": "Apache",
     "dependencies": {
-        "core": "*",
-        "neopixel": "github:microsoft/pxt-neopixel#v0.3.4"
+        "core": "*"
     },
     "files": [
         "README.md",
-        "main.ts",
-    ],
-    "testFiles": [
+        "main.ts"
     ],
     "yotta": {},
     "public": true
