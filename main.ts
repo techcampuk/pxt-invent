@@ -60,10 +60,10 @@ namespace invent {
         if ((motor == InventMotor.Right) || (motor == InventMotor.All)) {
             pins.analogWritePin(AnalogPin.P16, aSpeed);
             if(direction==InventMotorDir.Forward){
-                pins.digitalWritePin(DigitalPin.P15,0);
+                pins.digitalWritePin(DigitalPin.P15,1);
             }
             else {
-                pins.digitalWritePin(DigitalPin.P15,1);
+                pins.digitalWritePin(DigitalPin.P15,0);
             }
         }
     }
