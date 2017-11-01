@@ -12,8 +12,8 @@ enum InventMotor {
 }
 
 enum MotorDirection {
-  //% block="forwards"
-  Forwards,
+  //% block="forward"
+  Forward,
   //% block="reverse"
   Reverse
 }
@@ -49,7 +49,7 @@ namespace invent {
 
         if ((motor == InventMotor.Left) || (motor == InventMotor.All)) {
             pins.analogWritePin(AnalogPin.P14, aSpeed);
-            if(direction==MotorDirection.forwards){
+            if(direction==MotorDirection.forward){
                 pins.digitalWritePin(DigitalPin.P13,1);
             }
             else {
@@ -59,7 +59,7 @@ namespace invent {
 
         if ((motor == InventMotor.Right) || (motor == InventMotor.All)) {
             pins.analogWritePin(AnalogPin.P16, aSpeed);
-            if(direction==MotorDirection.forwards){
+            if(direction==MotorDirection.forward){
                 pins.digitalWritePin(DigitalPin.P15,1);
             }
             else {
