@@ -44,10 +44,11 @@ namespace invent {
      //   }
     //    else {
            let aSpeed = (speed/100) * 1023;
+           basic.showNumber(aSpeed);
            let remainder = aSpeed%1;
            aSpeed = aSpeed-remainder;
     //    }
-      basic.showNumber(aSpeed);
+      
 
         if ((motor == InventMotor.Left) || (motor == InventMotor.All)) {
             pins.analogWritePin(AnalogPin.P14, aSpeed);
