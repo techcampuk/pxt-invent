@@ -37,7 +37,8 @@ namespace invent {
 
         if (speed > 100) {
             speed = 100;
-        } else if (speed < 0) {
+        } 
+        if (speed < 0) {
             speed = 0;
         }
      
