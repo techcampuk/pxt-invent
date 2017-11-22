@@ -43,7 +43,7 @@ namespace invent {
      //       aSpeed = 0;
      //   }
     //    else {
-           let aSpeed = Math.round((speed/100) * 1023);
+           let aSpeed = parseInt((speed/100) * 1023);
     //    }
 
         if ((motor == InventMotor.Left) || (motor == InventMotor.All)) {
