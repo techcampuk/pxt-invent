@@ -36,17 +36,14 @@ namespace invent {
     export function motor(motor: InventMotor, direction: InventMotorDir, speed: number): void {
 
         if (speed > 100) {
-            speed = 100;
+            let aSpeed = 100;
         } 
-        if (speed < 0) {
-            speed = 0;
+        else if (speed < 0) {
+            let aSpeed = 0;
         }
-     
-       let sMax = 100;
-       let aMax = 1023;
-
-       let percent = speed/sMax;
-       let aSpeed = percent * aMax;
+       else {
+            let aSpeed = (speed/100) * 1023;
+       }
 
         if ((motor == InventMotor.Left) || (motor == InventMotor.All)) {
             pins.analogWritePin(AnalogPin.P14, aSpeed);
