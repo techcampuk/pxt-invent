@@ -43,6 +43,7 @@ namespace invent {
      //       aSpeed = 0;
      //   }
     //    else {
+           let aSpeed=0.0;
            let aSpeed = (speed/100) * 1023;
            basic.showNumber(aSpeed);
            let remainder = aSpeed%1;
