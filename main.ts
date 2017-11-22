@@ -43,7 +43,9 @@ namespace invent {
      //       aSpeed = 0;
      //   }
     //    else {
-           let aSpeed = ((speed/100) * 1023).toFixed(0);
+           let aSpeed = (speed/100) * 1023;
+           let remainder = aSpeed%1;
+           aSpeed = aSpeed-remainder;
     //    }
 
         if ((motor == InventMotor.Left) || (motor == InventMotor.All)) {
