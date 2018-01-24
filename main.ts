@@ -37,7 +37,7 @@ namespace invent {
 
         let aSpeed=0
         if (speed > 100) {
-            aSpeed = 100;
+            aSpeed = 1023;
         } 
         else if (speed < 0) {
             aSpeed = 0;
