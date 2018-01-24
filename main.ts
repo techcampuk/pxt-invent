@@ -39,16 +39,25 @@ namespace invent {
         if (speed > 100) {
             aSpeed = 1023;
         } 
-        else if (speed < 0) {
-            aSpeed = 0;
+        else if (speed < -100) {
+            aSpeed = 1023;
         }
         else {
-           aSpeed = (speed*1023) / 100;
+            if (speed>0){
+               aSpeed = (speed*1023) / 100;
+            }
+            if (speed<0){
+               aSpeed = (-speed*1023) / 100;
+            }
+        }  
+        
+        if (direction==InventMotorDir.Reverse){
+            speed=speed*-1;
         }
-
+ 
         if ((motor == InventMotor.Left) || (motor == InventMotor.All)) {
             pins.analogWritePin(AnalogPin.P14, aSpeed);
-            if(direction==InventMotorDir.Forward){
+            if(speed>0){
                 pins.digitalWritePin(DigitalPin.P13,0);
             }
             else {
@@ -58,7 +67,7 @@ namespace invent {
 
         if ((motor == InventMotor.Right) || (motor == InventMotor.All)) {
             pins.analogWritePin(AnalogPin.P16, aSpeed);
-            if(direction==InventMotorDir.Forward){
+            if(speed>0){
                 pins.digitalWritePin(DigitalPin.P15,1);
             }
             else {
