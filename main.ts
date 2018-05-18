@@ -152,6 +152,8 @@ namespace invent {
           invent.motor(InventMotor.Left, InventMotorDir.Reverse, 40)
           invent.motor(InventMotor.Right, InventMotorDir.Forward, 40)
       }
+      invent.motor(InventMotor.Left, InventMotorDir.Forward, 0)
+      invent.motor(InventMotor.Right, InventMotorDir.Forward, 0)
     
     }
     
