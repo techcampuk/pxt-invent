@@ -179,6 +179,7 @@ namespace invent {
         return 0
        }
       }
+    }
      
     /**
       * Analog Read Line Sensors
