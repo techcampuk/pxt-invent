@@ -162,7 +162,7 @@ namespace invent {
       */
     //% blockId="invent_line_sensor_digital" block="digital read line sensor %sensor"
     //% weight=100
-    export function line_sensor_digital(sensor: InventLineSensor): int {
+    export function line_sensor_digital(sensor: InventLineSensor): number {
       if (sensor == InventLineSensor.Left){  
        if(pins.analogReadPin(AnalogPin.P1)>l_thr){
          return 1
@@ -188,9 +188,9 @@ namespace invent {
       */
     //% blockId="invent_line_sensor_analog" block="analog read line sensor %sensor"
     //% weight=100
-    export function line_sensor_analog(sensor: InventLineSensor): int {
+    export function line_sensor_analog(sensor: InventLineSensor): number {
       if (sensor == InventLineSensor.Left){  
-       l_anl = pins.map(
+       let l_anl = pins.map(
          pins.analogReadPin(AnalogPin.P1),
          l_min,
          l_max,
@@ -200,7 +200,7 @@ namespace invent {
        return l_anl
       } 
       else {
-       r_anl = pins.map(
+       let r_anl = pins.map(
          pins.analogReadPin(AnalogPin.P0),
          r_min,
          r_max,
