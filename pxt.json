@@ -8,8 +8,8 @@
     },
     "files": [
         "README.md",
-        "main.ts"
-        "_locales/pt/invent-strings.json"
+        "main.ts",
+        "_locales/pt/invent-strings.json",
         "_locales/zh/invent-strings.json"
     ],
     "testFiles": [
