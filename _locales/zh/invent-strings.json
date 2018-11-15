@@ -1,0 +1,13 @@
+{
+  "InventMotor.Left|block": "剩下",
+  "InventMotor.Right|block": "对",
+  "InventMotor.All|block": "所有",
+  "InventMotorDir.Forward|block": "向前",
+  "InventLineSensor.Left|block": "离开（p1)",
+  "InventLineSensor.Right|block": "对（p0）",
+  "InventMotorDir.Reverse|block": "相反",
+  "invent.invent_motor|block": "功率 发动机 %motor|方向 %direction|速度 %speed",
+  "invent.invent_calibrate_line_sensors|block": "线传感器校准",
+  "invent.invent_line_sensor_digital|block": "数字读线传感器 %sensor",
+  "invent.invent_line_sensor_analog|block": "模拟线传感器读取 %sensor"
+}
