@@ -1,6 +1,6 @@
 {
     "name": "invent",
-    "version": "v0.1.5",
+    "version": "v0.7",
     "description": "Invent Library for Micro:bit Make Code",
     "license": "Apache",
     "dependencies": {
@@ -9,6 +9,8 @@
     "files": [
         "README.md",
         "main.ts"
+        "_locales/pt/invent-strings.json"
+        "_locales/zh/invent-strings.json"
     ],
     "testFiles": [
         "tests.ts"
