@@ -9,8 +9,8 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/pt/invent_strings.json",
-        "_locales/zh/invent_strings.json"
+        "_locales/pt/invent-strings.json",
+        "_locales/zh/invent-strings.json"
     ],
     "testFiles": [
         "tests.ts"
