@@ -4,7 +4,7 @@ This library provides a Microsoft PXT package for Invent, see
 https://www.inventblocks.com
 
 # Tech Camp
-This library, and the Invent! Robotics system, is produced by Tech Camp. Tech camp is the UK's original and longest-running engineering and coding Summer camp, with expert tutors studying at the UK's leading institutions. All our courses involve innovative take-home projects not available at any other camp so the learning and fun can continue at home. 
+This library, and the Invent! Robotics system, is produced by Tech Camp. Tech Camp is the UK's original and longest-running engineering and coding Summer camp, with expert tutors studying at the UK's leading institutions. All our courses involve innovative take-home projects not available at any other camp so the learning and fun can continue at home. 
 
 Learn skills in coding, 3D design, electronics, model-making, robotics and much more. Join other creative and like-minded students from around the UK and abroad for an experience like no other. To find out more about our Summer camps and courses, please vist https://www.techcamp.org.uk
 
